@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ <tiles-definitions> 
+     <definition name="base" 
+         template="/WEB-INF/views/layout/default_layout.jsp"> 
+         <put-attribute name="header" value="/WEB-INF/views/common/header.jsp" /> 
+         <put-attribute name="body" value="" /> 
+         <put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" /> 
+     </definition> 
+   	 
+   	 <!-- 登录,入金,账户绑定,账户验证 -->
+   	 <definition name="login" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/login.jsp" /> 
+     </definition>
+     <definition name="into" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/intoGold.jsp" /> 
+     </definition>
+     <definition name="addbind" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/addbind.jsp" /> 
+     </definition> 
+     <definition name="bind" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/bind.jsp" /> 
+     </definition> 
+     <definition name="validate" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/validate.jsp" /> 
+     </definition> 
+	 
+   	 <definition name="register.validateAccount" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/register.jsp" /> 
+     </definition>
+      <definition name="register.registerUser" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/register2.jsp" /> 
+     </definition>  
+     
+     <definition name="toTrade" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/trade.jsp" /> 
+     </definition> 
+      <definition name="toTradeLook" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/order.jsp" /> 
+     </definition> 
+     
+	 <definition name="edit" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/edit.jsp" /> 
+     </definition> 
+     
+     <definition name="bill.checkbill" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/bill/checkbill.jsp" /> 
+     </definition> 
+     <definition name="bill.statement" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/bill/statement.jsp" /> 
+     </definition>
+     <definition name="register.success" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/success.jsp" /> 
+     </definition> 
+      <definition name="toBindCard" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/bind.jsp" /> 
+     </definition>
+      <definition name="toBindCardBank" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/addbind.jsp" /> 
+     </definition>
+     <definition name="toCheckCard" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/validate.jsp" /> 
+     </definition> 
+     
+     <definition name="pay.paypage" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/pay.jsp" /> 
+     </definition>
+    <definition name="forgetpwd" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/forgetpwd.jsp" /> 
+     </definition>
+      <definition name="toResetPassword" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/resetPwd.jsp" /> 
+     </definition>
+       <definition name="toCheckMail" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/checkMail.jsp" /> 
+     </definition>
+      <definition name="resetPassword" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/resetSuccess.jsp" /> 
+     </definition>
+     <definition name="error" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/common/error.jsp" /> 
+     </definition>
+      <definition name="agreement" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/agreement.jsp" /> 
+     </definition>
+      <definition name="errorNumber" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/common/errorNumber.jsp" /> 
+     </definition>
+      <definition name="introduce" extends="base"> 
+         <put-attribute name="body" value="/WEB-INF/views/common/introduce.jsp" /> 
+     </definition>
+     
+     <definition name="howtoSing" extends="base"> 
+     	 <put-attribute name="header" value="" /> 
+         <put-attribute name="body" value="/WEB-INF/views/common/howtoSing.jsp" /> 
+         <put-attribute name="footer" value="" /> 
+     </definition>
+     
+      <definition name="loadImage" extends="base"> 
+         <put-attribute name="header" value="" /> 
+         <put-attribute name="body" value="/WEB-INF/views/loadImage.jsp" /> 
+         <put-attribute name="footer" value="" /> 
+     </definition>
+ </tiles-definitions>
